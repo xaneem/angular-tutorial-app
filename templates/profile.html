@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Github Social</h1>
+    <hr>
+    <button type="button" class="btn btn-default" ui-sref="home"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <img ng-src="http://github.com/{{ profile.username }}.png" class="img-circle avatar">
+
+            <br> @{{ profile.username }}
+            <br>
+            <br>
+            <table class="table table-bordered table-hover" ng-show="profile.repos.length > 0">
+                <tbody>
+                    <tr ng-repeat="repo in profile.repos">
+                        <td>{{repo.name}}</td>
+                        <td>{{repo.stars}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
