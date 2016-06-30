@@ -1,18 +1,40 @@
-.profile-container {
+/*
+This is the equivalent LESS/SASS for the CSS code below.
+.github-user {
 	text-align: center;
 	min-height: 200px;
+
+	.avatar {
+		height: 150px;
+		width: 150px;
+
+		&.clickable {
+			cursor: pointer;
+			transition: all 0.2s linear;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}*/
+
+.github-user{
+	text-align: center;
+	min-height: 200px;	
 }
 
-.avatar {
+.github-user .avatar {
 	height: 150px;
 	width: 150px;
+	background: #CCC;
 }
 
-.clickable {
+.github-user .avatar.clickable {
 	cursor: pointer;
 	transition: all 0.2s linear;
 }
 
-.clickable:hover {
+.github-user .avatar.clickable:hover {
 	opacity: 0.8;
 }

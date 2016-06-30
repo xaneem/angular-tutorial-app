@@ -4,15 +4,18 @@
     angular
         .module('githubSocial')
         .controller('ProfileController', function($stateParams, apiService) {
-			var self = this;
+            var self = this;
 
-            this.username = $stateParams.username;
+            self.user = {
+                'username': $stateParams.username
+            };
 
-            apiService.getRepos(this.username).then(function(repos){
-            	self.repos = repos;
+            // Define empty repo array
+            self.repos = [];
+
+            apiService.getRepos(self.user.username).then(function(repos) {
+                // After the apiService resolves the promise, populate the repos array with returned data
+                self.repos = repos;
             });
-
-
         });
-
 })();

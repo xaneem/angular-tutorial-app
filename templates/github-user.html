@@ -1,0 +1,11 @@
+<div class="github-user">
+	
+	<img ng-src="http://github.com/{{ vm.user.username }}.png" class="img-circle avatar clickable" ui-sref="profile({'username': vm.user.username})">
+	
+	<br>
+	@{{ vm.user.username}}
+
+	<button ng-if="vm.showButton" type="button" class="btn btn-danger btn-xs" ng-click="vm.removeMe()">
+		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	</button>
+</div>
