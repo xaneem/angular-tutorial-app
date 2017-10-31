@@ -13,4 +13,8 @@ Includes
 - Directives
 - Best Practises (controllerAs, [IIFE](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression), file naming conventions etc.)
 
+## Preview
+![Preview](/preview.png?raw=true "Preview")
+
+
 If you're a beginner to Angular, try building on this application. If you extend something, do create a PR :)
